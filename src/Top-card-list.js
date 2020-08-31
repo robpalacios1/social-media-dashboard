@@ -1,18 +1,39 @@
 import React from 'react'
 import Card from './Card'
+import './Top-card-list.css'
 
 const cardListData = [
     {
-        username: '@Pepito'
+        username: '@RobertoPalacios',
+        id:1,
+        followers: '1596',
+        todayFollowers: 12,
+        icon: 'images/icon-facebook.svg',
+        name: 'facebook'
     },
     {
-        username: '@Luisa'
+        username: '@Robpalacios11',
+        id:2,
+        followers: '28k',
+        todayFollowers: 20,
+        icon: 'images/icon-twitter.svg',
+        name: 'twitter'
     },
     {
-        username: '@Michu'
+        username: '@Michuyblacky',
+        id:3,
+        followers: '6k',
+        todayFollowers: 30,
+        icon: 'images/icon-instagram.svg',
+        name: 'instagram'
     },
     {
-        username: '@Blacky'
+        username: '@RobertoPalacios',
+        id:4,
+        followers: '12k',
+        todayFollowers: -50,
+        icon: 'images/icon-youtube.svg',
+        name: 'youtube'
     }
 ]
 
@@ -23,7 +44,7 @@ function TopCardList() {
                 <div className="grid">
                     {
                         cardListData.map((cardData) =>
-                            <Card key={cardData.mapusername} username={cardData.username} />
+                            <Card key={cardData.id} {...cardData} />
                         )
                     }
 
