@@ -2,20 +2,23 @@ import React from 'react'
 import './Card.css'
 
 
-function Card(props) {
+function Card({username, followers, todayFollowers, icon, name}) {
+
+    const cardClass = `card ${name}`
+
     return (
-        <article className="card twitter">
+        <article className={cardClass}>
             <p className="card-title">
-                <img src="images/icon-twitter.svg" alt="" />
-                {props.username}
+                <img src={icon} alt="" />
+                {username}
             </p>
             <p className="card-followers">
-                <span className="card-followers-number">28k</span>
+                <span className="card-followers-number">{followers}</span>
                 <span className="card-followers-title">Followers</span>
             </p>
             <p className="card-today">
                 <img src="images/icon-up.svg" alt="" />
-                12 Today
+                {todayFollowers} Today
             </p>
         </article>
     )
