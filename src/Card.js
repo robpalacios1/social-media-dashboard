@@ -2,10 +2,8 @@ import React from 'react'
 import './Card.css'
 
 
-function Card({username, followers, todayFollowers, icon, name}) {
-
+function Card({ username, followers, todayFollowers, icon, name }) {
     const cardClass = `card ${name}`
-
     return (
         <article className={cardClass}>
             <p className="card-title">
