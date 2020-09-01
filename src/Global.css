@@ -2,10 +2,13 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    color: var(--baseColor);
-    background: var(--baseBackground);
-    /* border: 1px solid red; */
-  }
+}
+
+main {
+  color: var(--baseColor);
+  background: var(--baseBackground);
+  min-height: 100vh;
+}
 
 :root {
     --lime-green: hsl(163, 72%, 41%);
