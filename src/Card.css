@@ -18,7 +18,7 @@
     top: 0;
 }
 
-  .card.facebook::before {
+.card.facebook::before {
     background: var(--facebook);
 }
 
@@ -45,10 +45,6 @@
 
 .card-title img {
     margin-right: 5px;
-}
-
-.card-followers {
-    /* border: 1px solid green; */
 }
 
 .card-followers-number {
